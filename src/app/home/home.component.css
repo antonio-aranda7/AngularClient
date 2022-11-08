@@ -1,0 +1,161 @@
+.homeText{ 
+    font-size: 35px; 
+    color: red; 
+    text-align: center; 
+    position: relative; 
+    top:30px; 
+    text-shadow: 2px 2px 2px gray; 
+}
+
+header {
+    background-color: gray;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gray;
+}
+
+input, textarea {
+    font-size: 18px;
+    width: 200px;
+}
+input[type=submit]{
+    width: auto;
+}
+
+label {
+    font-size: 16px;
+}
+
+
+#theForm {
+    background-color: gray;
+}
+
+#theForm input[type=submit] {
+    background-color: green;
+    color:aliceblue;
+}
+
+ul.product-props li{
+    font-size: small;
+}
+
+ul.product-props li {
+    list-style-type: none;
+}
+
+.product-info {
+    border: 1px solid grey;
+    display: inline-block;
+    padding: 8px 2px;
+    margin: 2px;
+    width: 1000px;
+    background-color: lightgray;
+    border-radius: 5px;
+
+}
+
+#loginToggle {
+    cursor: pointer;
+}
+.popupForm {
+    padding: 5px;
+    border: 2px black inset;
+    display: inline-block;
+}
+.popupForm input {
+    width: 200px;
+}
+.popupForm label {
+    width: 150px;
+    display: inline-block;
+}
+
+.popupForm input[type=checkbox], .popup-form input[type=submit] {
+    width: auto;
+}
+
+.product-info img{
+    margin: 10px;
+    float: left;
+    border: 5px solid grey;
+    max-width: 550px;
+}
+
+menu li{
+    display: inline;
+}
+
+menu li::after {
+    content: ' |';
+}
+
+/*menu li:last-of-type::after {
+    content: ;
+}*/
+
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; 
+}
