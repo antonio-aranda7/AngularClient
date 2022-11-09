@@ -7,6 +7,7 @@ import { EnvironmentUrlService } from './environment-url.service';
 import { Users } from 'src/app/_interfaces/user/userForAuthenticationDto.model';
 import { Subject } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -26,6 +27,7 @@ export class AuthenticationService {
 
   public sendAuthStateChangeNotification = (isAuthenticated: boolean) => {
     this.authChangeSub.next(isAuthenticated);
+    //console.log(this.authChangeSub);
   }
 
   public logout = () => {

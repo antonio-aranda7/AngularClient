@@ -59,9 +59,6 @@ export class CompanieUpdateComponent implements OnInit {
     this.repository.putData(apiAddress,this.company).subscribe( 
       (data: any) => {
           let result = data[0];
-          this.ngOnInit();
     })
   }
-
-  
 }

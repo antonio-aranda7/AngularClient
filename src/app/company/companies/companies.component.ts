@@ -14,33 +14,13 @@ import { ActivatedRoute, Router, RouterEvent, RouterLink } from '@angular/router
 export class CompaniesComponent implements OnInit {
   public companies: Company[];
 
-  companie:Company={
-    id: 0,
-    name:"",
-    address:"",
-    country:""
-  };
-
-  insert:FormGroup=this.form.group({
-    name: new FormControl(),
-    address: new FormControl(),
-    country: new FormControl(),
-  });
-
-  update:FormGroup=this.form.group({
-    id: new FormControl(),
-    name: new FormControl(),
-    address: new FormControl(),
-    country: new FormControl(),
-  });
-
   constructor(private repository: RepositoryService, private form:FormBuilder, private router:Router) { }
 
   ngOnInit(): void {
     this.getCompanies();
   }
   getCompanies = () => {
-    const apiAddress: string = "api/companies/GetCompanies";
+    const apiAddress: string = "api/companies";
     this.repository.getData(apiAddress)
     .subscribe({
       next: (com: Company[]) => this.companies = com,
